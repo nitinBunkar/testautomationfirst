@@ -17,7 +17,7 @@ import com.sun.org.apache.bcel.internal.generic.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import sun.jvm.hotspot.runtime.Threads;
-
+//programing
 public class greenkartpractive {
 
 	public static void main(String[] args) {
@@ -73,8 +73,11 @@ public class greenkartpractive {
        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("select")));
        Select country = new Select(Driver.findElement(By.cssSelector("select")));
        country.selectByVisibleText("India");
-	   
+	
+       //click checkbox
+      
 	   Driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+	   //click proceed
 	   Driver.findElement(By.xpath("//button[text()='Proceed']"));
 	   
 	   Driver.close();
